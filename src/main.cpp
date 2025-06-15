@@ -10,11 +10,11 @@
 OneWire oneWire(ONE_WIRE_BUS);
 DallasTemperature sensors(&oneWire);
 
+// Подключение TFT дисплея
+
 #define TFT_CS    7
 #define TFT_RST   8
 #define TFT_DC    9
-
-// Пин подключения TFT дисплея
 
 Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS, TFT_DC, TFT_RST);
 
